@@ -16,13 +16,13 @@ New York, NY
 18062 
 */
 
-const fName = "Bob";
-const lName = "Jones";
-const houseNum = 72;
-const street = "Sesame";
-const city = "Santa Clara";
-const state = "California";
-const zip = 95051;
+const fName = "Steve";
+const lName = "Rogers";
+const houseNum = 569;
+const street = "Amsterdam Ave";
+const city = "New York";
+const state = "NY";
+const zip = 18062;
 const address = `${fName} ${lName} 
 ${houseNum}, ${street}
 ${city}, ${state}
