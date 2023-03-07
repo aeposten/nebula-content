@@ -23,6 +23,7 @@ const street = "Amsterdam Ave";
 const city = "New York";
 const state = "NY";
 const zip = 18062;
+
 const address = `${fName} ${lName} 
 ${houseNum}, ${street}
 ${city}, ${state}
