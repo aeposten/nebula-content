@@ -6,7 +6,7 @@ const breed = "boxer";
 const weightInLbs = 80;
 const isGoodBoy = true;
 
-const magnusString = `My pet's name is ${petName}. He is a ${species} and his breed is ${breed}. His weight is ${weightInLbs} lbs. Is he a good boy? ${isGoodBoy}`
+const magnusString = `My pet's name is ${petName}. He is a ${species} and his breed is ${breed}. His weight is ${weightInLbs} lbs. Is he a good boy? ${isGoodBoy}`;
 
 console.log(magnusString);
 
