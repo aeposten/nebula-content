@@ -26,5 +26,6 @@ const zip = 95051;
 const address = `${fName} ${lName} 
 ${houseNum}, ${street}
 ${city}, ${state}
-${zip}`
+${zip}`;
 
+console.log(address);
