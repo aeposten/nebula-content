@@ -46,7 +46,7 @@ console.log(sortThis);
 
 // Write a string stating your favorite 3 foods.
 //  Ex: 'My favorite foods are za, pineapple, hawaiian-pizza'
-const foodString = "My favorite foods are pizza, fried rice, and kale."
+const foodString = "My favorite foods are pizza, fried rice, and kale.";
 
 console.log(foodString);
 
@@ -65,7 +65,7 @@ console.log(backToString);
 
 // Given the following array: [1,2,3,4,5,7,8,9,10]
 // insert the number 6 into its logical location
-const numberArray = [1,2,3,4,5,7,8,9,10];
+const numberArray = [1, 2, 3, 4, 5, 7, 8, 9, 10];
 
 numberArray.splice(5, 0, 6);
 
@@ -80,6 +80,9 @@ const joinedArray = arr1.concat(arr2);
 console.log(joinedArray);
 
 // Create a multi-dimensional array
-const multiDimensional = [["magnus", "dog"], ["gilgamesh", "cat"]];
+const multiDimensional = [
+  ["magnus", "dog"],
+  ["gilgamesh", "cat"],
+];
 
 console.log(multiDimensional);
