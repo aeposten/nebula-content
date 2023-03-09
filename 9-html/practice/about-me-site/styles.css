@@ -36,6 +36,8 @@
     line-height: 1.5;
     background-color: var(--green);
     -webkit-font-smoothing: antialiased;
+    font-family: "Montserrat", sans-serif;
+    color: var(--grey);
   }
 
   .bio-container {
@@ -49,12 +51,58 @@
 
   .amy-img {
     width: 100%;
-    height: 35vh;
+    height: 50vh;
     background-image: url("./img/amy.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 2em 2em 0 0;
   }
-
+h1 {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    color: var(--gunmetal);
+}
   
+h2 {
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: var(--gunmetal);
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    width: 100%;
+    list-style: none;
+}
+
+@media (min-width: 500px) {
+    .bio-container {
+        flex-direction: row;
+    }
+
+    .amy-img {
+        border-radius: 2em 0 0 2em;
+    }
+}
