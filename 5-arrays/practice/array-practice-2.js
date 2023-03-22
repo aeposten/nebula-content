@@ -20,6 +20,7 @@ console.log(removedItem);
 //   If it does, log true, if it doesnt, log false
 const doesContainOne = numArr.includes(1);
 
+console.log(4 in numArr)
 console.log(doesContainOne);
 
 // Remove the first element from the prior array and set that element to a variable called 'removedFirstItem'

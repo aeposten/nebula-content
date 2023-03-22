@@ -1,6 +1,6 @@
 // 1. Write a function that multiplies 3 input numbers together.
 function multiplyThree(num1, num2, num3) {
-  const multiplied = num1 + num2 + num3;
+  const multiplied = num1 * num2 * num3;
 
   return multiplied;
 }
@@ -34,7 +34,7 @@ function returnInitials(nameArray) {
   return initialsArray;
 }
 
-// console.log(returnInitials(["Tim Smith", "Bob Jones", "Jane Doe"]));
+console.log(returnInitials(["Tim Smith", "Bob Jones", "Jane Doe"]));
 
 // 4. Write a function which takes in two numbers and a mathematical operator and performs Math on those two numbers utilizing that operator
 function performOperation(num1, num2, operator) {
@@ -54,7 +54,7 @@ function performOperation(num1, num2, operator) {
 
     case "/":
       if (num === 0) {
-        throw "Can't divide by 0!";
+        return "Can't divide by 0!";
       } else {
         output = num1 / num2;
       }

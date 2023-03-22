@@ -28,9 +28,10 @@ const nameArray = [
 ];
 
 for (let i = 0; i < nameArray.length; i++) {
-  let currentStudent = nameArray[i];
-  console.log(currentStudent);
+  console.log(nameArray[i])
 }
+
+
 
 // 4.   Use the array below for the following question
 //      Loop over the numArray & ONLY log even numbers to the console.
