@@ -11,9 +11,9 @@ const family = {
         isMarried: true    }
 }
 
-for (let prop in family) {
-  console.log(prop)
-  for(let key in family[prop]) {
-    console.log(`${key}: ${family[prop][key]}` )
+for (let member in family) {
+  console.log(member)
+  for(let characteristic in family[member]) {
+    console.log(`${characteristic}: ${family[member][characteristic]}` )
   }
 }
