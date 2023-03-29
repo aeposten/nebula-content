@@ -1,0 +1,19 @@
+.button {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  background-color: #f4a261;
+  border: 2px solid #e76f51;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #2a9d8f;
+  border: 2px solid #264653;
+  border-radius: 10px;
+  text-align: center;
+}
