@@ -30,3 +30,5 @@ const newLi = document.createElement("li");
 newLi.textContent = "Item 4";
 
 ul.append(newLi);
+
+console.log(!document.body.style.backgroundColor)

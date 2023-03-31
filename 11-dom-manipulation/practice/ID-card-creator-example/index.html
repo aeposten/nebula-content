@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <script src='script.js'></script>
-</body>
+  <head>
+    <title>ID Card Creator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Create ID Card</h1>
+      <form id="form" value="submit">
+        <label for="full-name"
+          >Full Name:<input id="fullName" type="text" name="fullName"
+        /></label>
+        <label for="birthday"
+          >Birthday:<input id="birthday" type="date" name="birthday"
+        /></label>
+        <label for="fact"
+          >Fun Fact:<input id="fact" type="text" name="fact"
+        /></label>
+        <button class="create-btn">Create ID</button>
+      </form>
+    </header>
+    <main class="id-card" id="id-card"></main>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -12,7 +12,7 @@ body.style.backgroundColor = "#e9c46a";
 const newH1 = document.createElement("h1");
 
 // Append a new h1 element to the body element as a child
-body.appendChild(newH1);
+body.append(newH1);
 
 // Add text to the h1 element
 newH1.textContent = "Hooray!";
@@ -65,20 +65,30 @@ buttonTwo.className = "button";
 // Create functionality that, when you click this button it increases the h1 value
 let count = 0;
 newH1.textContent = count;
-function incrementCount() {
-  count++;
+// function incrementCount() {
+//   count++;
+//   newH1.textContent = count;
+// }
+
+function incrementDecrement(operation) {
+  operation === "increment" ? count++ : count--;
+
   newH1.textContent = count;
 }
 
-buttonOne.addEventListener("click", incrementCount);
+buttonOne.addEventListener("click", () => {
+    incrementDecrement("increment");
+});
 
 /* -------------------------------------------------------------------------- */
 // Decrement BUTTON FUNCTION
 // Create functionality that, when you click this button it decreases the h1 value
 
 function decrementCount() {
-    count--;
-    newH1.textContent = count;
+  count--;
+  newH1.textContent = count;
 }
 
-buttonTwo.addEventListener("click", decrementCount);
+buttonTwo.addEventListener("click", () => {
+    incrementDecrement("decrement");
+});
