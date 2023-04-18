@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto:wght@400;900&display=swap');
+
+
+/* 
+font-family: 'Delicious Handrawn', cursive;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --yellow: #ffff00;
+    --gray: #f5f1ed;
+    --box-shadow: 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+}
+
+* {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+}
+
+main {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--yellow);
+    box-shadow: var(--box-shadow);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li::before {
+    content: '👎'
+}

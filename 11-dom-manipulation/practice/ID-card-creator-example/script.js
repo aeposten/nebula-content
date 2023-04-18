@@ -1,7 +1,4 @@
 const form = document.getElementById("form");
-const fullName = document.getElementById("fullName");
-const birthday = document.getElementById("birthday");
-const fact = document.getElementById("fact");
 const idCard = document.getElementById("id-card");
 
 form.addEventListener("submit", (event) => {
