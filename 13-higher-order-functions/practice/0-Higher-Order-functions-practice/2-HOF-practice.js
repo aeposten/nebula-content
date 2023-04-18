@@ -50,7 +50,9 @@ function vowels(letter) {
 
 function capitals(letter) {
   const letters = "abcdefghijklmnopqrstuvwxyz";
-  return((letter === letter.toUpperCase()) && (letters.includes(letter.toLowerCase())));
+  return (
+    letter === letter.toUpperCase() && letters.includes(letter.toLowerCase())
+  );
 }
 
 function nonLetters(letter) {
@@ -63,19 +65,34 @@ function stringInfo(calculation, string) {
   let result = 0;
 
   for (let i = 0; i < string.length; i++) {
-    if (calculation(string[i]) === true) {
+    if (calculation(string[i])) {
       result++;
     }
   }
   return result;
 }
 
-console.log(stringInfo(length, "Howdy Partner!"));
-console.log(stringInfo(vowels, "Howdy Partner!"));
-console.log(stringInfo(capitals, "Howdy Partner!"));
-console.log(stringInfo(nonLetters, "Howdy Partner!"));
+// console.log(stringInfo(length, "Howdy Partner!"));
+// console.log(stringInfo(vowels, "Howdy Partner!"));
+// console.log(stringInfo(capitals, "Howdy Partner!"));
+// console.log(stringInfo(nonLetters, "Howdy Partner!"));
 
 /* Question 3
 Write a higher order function that minimizes a given list of numbers into one number
     Example:
     minimizeNums(add, [2,3,5,8]) => 18                            */
+function add(total, num) {
+  return total + num;
+}
+
+function minimizeNums(operation, array) {
+  let total = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    total = add(total, array[i]);
+  }
+
+  return total;
+}
+
+console.log(minimizeNums(add, [2, 3, 5, 8]));
