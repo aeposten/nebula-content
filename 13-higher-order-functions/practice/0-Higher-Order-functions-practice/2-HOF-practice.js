@@ -5,7 +5,6 @@ Write a higher order function to manipulate numbers in an array
     changeNums([1,2,3,4,5], halves) => [.5,1,1.5,2,2.5]
     changeNums([1,2,3,4,5], pow) => [1,4,9,16,25]            */
 
-const { count } = require("console");
 
 function doubler(num) {
   return num * 2;
@@ -45,7 +44,7 @@ function length(letter) {
 function vowels(letter) {
   const vowels = "aeiou";
 
-  return vowels.includes(letter);
+  return vowels.includes(letter.toLowerCase());
 }
 
 function capitals(letter) {
@@ -89,7 +88,7 @@ function minimizeNums(operation, array) {
   let total = 0;
 
   for (let i = 0; i < array.length; i++) {
-    total = add(total, array[i]);
+    total = operation(total, array[i]);
   }
 
   return total;

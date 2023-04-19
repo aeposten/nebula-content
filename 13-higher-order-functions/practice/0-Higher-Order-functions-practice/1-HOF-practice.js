@@ -10,6 +10,10 @@ function multiply(num1, num2) {
   return num1 * num2;
 }
 
+function add(num1, num2) {
+  return num1 + num2;
+}
+
 function calculate(operator, num1, num2) {
   return operator(num1, num2);
 }
@@ -23,13 +27,26 @@ Write the callback functions separately
     calculateAll(subtract, 2,4,5,7) => -14
 */
 
-function calculateAll(operator, arr) {
-  let total = 1;
-  for (let i = 0; i < arr.lenght; i++) {
-    total = operator(total, arr[i]);
+// function calculateAll(operator, arr) {
+//   let total = 0;
+//   for (let i = 0; i < arr.lenght; i++) {
+//     total = operator(total, arr[i]);
+//   }
+//   return total;
+// }
+
+function calculateAll(operation, array) {
+  let total = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    total = operation(total, array[i]);
   }
+
   return total;
 }
+
+
+console.log(calculateAll(add, [2,4,5,7]))
 
 /* Question 3
 Write a function that takes in a string and performs some form of manipulation on it
@@ -114,4 +131,4 @@ function oneType(type, arr) {
   return typeArray
 }
 
-console.log(oneType("string", ['I love coding', 10, undefined, Infinity, 'goosfraba', null, ['Nested Array!']]))
+console.log(oneType("number", ['I love coding', 10, undefined, Infinity, 'goosfraba', null, ['Nested Array!']]))
